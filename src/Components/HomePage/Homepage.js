@@ -1,19 +1,25 @@
 import React from 'react';
-import "./Homepage.css";
-import Button from "./Navbutton";
-import Texthomepage from "./Texthomepage"
-import Homepageimg from './Homepageimg';
-import Bottomtext from './Bottomtext';
+import styled from "styled-components";
+import Header from '../Header';
+import Body from '../Body';
+
+
 
 function Homepage() {
   return (
-    <div>
-        <Button />
-        <Texthomepage />
-        <Homepageimg />
-        <Bottomtext />
-    </div>
+    
+      <Container>
+        <Header />
+        <Body />
+      </Container>
   )
 }
 
 export default Homepage
+
+const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+`
