@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const prepareForm = (formArr) => {
   return formArr.reduce((r, v) => ({ ...r, [v.name]: "" }), {});
@@ -76,13 +76,7 @@ Form.defaultProps = {
   ],
   submitBtn: "Sign In",
   onSubmit: (form) => console.log(form),
-  redirect: {
-    label: "Don't hava an account?",
-    link: {
-      label: "Sign Up",
-      to: "/Register",
-    },
-  },
+  redirect: null,
 };
 
 export default Form;
@@ -143,5 +137,5 @@ const SRedirect = styled.div`
 `
 const SRedirectLabel = styled.span`
 `
-const SRedirectLink = styled(Link)`
+const SRedirectLink = styled.div`
 `

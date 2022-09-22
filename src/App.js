@@ -1,9 +1,8 @@
 import './App.css';
-import Homepage from './Components/HomePage/Homepage';
+import Homepage from './Pages/Homepage';
 import Login from './Pages/Login';
 // import {BrowserRouter as Router, Route} from 'react-router-dom';
-// import { Pages } from '@material-ui/icons';
-// import { Home } from '@material-ui/icons';
+import Register from './Pages/Register';
 
 
 
@@ -15,6 +14,7 @@ function App() {
     <div>
       <Homepage />
       <Login />
+      <Register />
     </div>
   );
 }

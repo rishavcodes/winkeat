@@ -7,17 +7,49 @@ import Form from '../Components/Form';
 
 
   function Login () {
+
+    const onSubmitHandler = (form, callback) => {
+      console.log("Sign In submitted: ", form);
+      callback();
+  };
+
+
   return (
     <Container>
       <LoginImg>
         <img src="/images/mini-img3.png" alt='Not available' />
       </LoginImg>
       <FormBox>
-        <Form />
+      <Form
+                title={"Sign In"}
+                formArr={formArr}
+                submitBtn={"Sign In"}
+                onSubmit={onSubmitHandler}
+                redirect={{
+                    label: "Don't have an account?",
+                    link: {
+                        label: "Register",
+                        to: "/register",
+                    },
+                }}
+            />
       </FormBox>
     </Container>
   )
 }
+
+const formArr = [
+  {
+      label: "Email",
+      name: "email",
+      type: "text",
+  },
+  {
+      label: "Password",
+      name: "password",
+      type: "password",
+  },
+];
 
 export default Login
 
