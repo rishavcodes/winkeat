@@ -1,8 +1,11 @@
 import './App.css';
 import Homepage from './Pages/Homepage';
 import Login from './Pages/Login';
-// import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Register from './Pages/Register';
+import VendorLogin from './Pages/VendorLogin';
+// import Sidebar from './Components/Sidebar/Sidebar';
+
 
 
 
@@ -12,9 +15,16 @@ import Register from './Pages/Register';
 function App() {
   return (
     <div>
-      <Homepage />
-      <Login />
-      <Register />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/vendorlogin" element={<VendorLogin />} />
+      </Routes>
+    </Router>
+
+      {/* <Sidebar /> */}
     </div>
   );
 }

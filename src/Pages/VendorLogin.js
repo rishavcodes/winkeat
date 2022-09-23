@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-// import Input from "../../Components/Input"
 import Form from "../Components/Form";
 import { Link } from "react-router-dom";
 
-function Login() {
+function VendorLogin() {
   const onSubmitHandler = (form, callback) => {
     console.log("Sign In submitted: ", form);
     callback();
   };
-
   return (
     <Container>
       <LoginImg>
@@ -21,13 +19,6 @@ function Login() {
           formArr={formArr}
           submitBtn={"Sign In"}
           onSubmit={onSubmitHandler}
-          redirect={{
-            label: "Don't have an account?",
-            link: {
-              label: "Register",
-              to: "/register",
-            },
-          }}
         />
 
         <OtherOptions>
@@ -48,8 +39,8 @@ function Login() {
 
 const formArr = [
   {
-    label: "Roll No",
-    name: "roll no",
+    label: "Phone no",
+    name: "phone",
     type: "text",
   },
   {
@@ -59,7 +50,7 @@ const formArr = [
   },
 ];
 
-export default Login;
+export default VendorLogin;
 
 const Container = styled.div`
   width: 100vw;
@@ -76,21 +67,21 @@ const LoginImg = styled.div`
   }
 `;
 const FormBox = styled.div`
-  width: 350px;
+  width: 370px;
   height: 450px;
-  margin-top: 100px;
+  margin-top: 85px;
   margin-left: 80px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 `;
 
 const OtherOptions = styled.div`
   text-align: center;
-  margin-top: 50px;
+  margin-top: 90px;
   text-decoration: none;
   color: grey;
 `;
 const ForgotPassword = styled(Link)`
-  
-`;
-const ContactUs = styled(Link)``;
+`
+const ContactUs = styled(Link)`
+`

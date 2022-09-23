@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { Switch } from "@mui/material";
-// import Login from "../Pages/LoginPage/Login";
+import {Link} from "react-router-dom";
 
 function Header() {
   return (
     
         <Buttons>
           <ButtonGroup>
+          <Link to="/login">
             <LeftButton>Sign in</LeftButton>
+          </Link>
+          <Link to="/register">
             <RightButton>Sign Up</RightButton>
+          </Link>
           </ButtonGroup>
         </Buttons>
       
@@ -19,7 +21,8 @@ function Header() {
 
 export default Header;
 
-const Buttons = styled.div``;
+const Buttons = styled.div`
+`;
 const ButtonGroup = styled.div`
   padding-top: 25px;
   display: flex;
@@ -31,7 +34,7 @@ const LeftButton = styled.div`
   background-color: white;
   height: 50px;
   width: 150px;
-  color: Black;
+  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;

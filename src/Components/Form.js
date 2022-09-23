@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const prepareForm = (formArr) => {
   return formArr.reduce((r, v) => ({ ...r, [v.name]: "" }), {});
@@ -22,9 +22,9 @@ const Form = ({ title, formArr, submitBtn, onSubmit, redirect }) => {
     <SForm autoComplete="off">
       <FormHeader>
         <BackIcon>
-          <a href="#">
+          <Link to="/">
             <ArrowBackIcon />
-          </a>
+          </Link>
         </BackIcon>
         <SFormTitle>{title}</SFormTitle>
       </FormHeader>
@@ -81,6 +81,10 @@ Form.defaultProps = {
 
 export default Form;
 
+
+
+
+
 const SForm = styled.form``;
 const BackIcon = styled.div`
   margin-left: 20px;
@@ -108,14 +112,16 @@ const SLabel = styled.label`
 const SInput = styled.input`
   outline: none;
   border: 1px solid;
-  width: 300px;
-  height: 26px;
+  width: 280px;
+  height: 30px;
+  background-color: #EEEEEE;
+  border-color: grey;
   padding: 7px;
   font-size: 14px;
   border-radius: 5px;
 `;
 const SButton = styled.button`
-  width: 315px;
+  width: 300px;
   height: 40px;
   padding: 7px;
   margin-left: 30px;
@@ -137,5 +143,5 @@ const SRedirect = styled.div`
 `
 const SRedirectLabel = styled.span`
 `
-const SRedirectLink = styled.div`
+const SRedirectLink = styled(Link)`
 `

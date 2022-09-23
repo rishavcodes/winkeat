@@ -26,7 +26,7 @@ function Register() {
                     label: "Already have an account?",
                     link: {
                         label: "Sign In",
-                        to: "/signin",
+                        to: "/login",
                     },
                 }}
             />
@@ -50,7 +50,7 @@ const formArr = [
   {
     label: "Roll No",
     name: "roll no",
-    type: "int",
+    type: "text",
 },
 
   {
@@ -82,8 +82,8 @@ const LoginImg = styled.div`
   }
 `
 const FormBox = styled.div`
-  width: 380px;
-  height: 550px;
+  width: 370px;
+  height: 580px;
   margin-top: 85px;
   margin-left: 80px;
   background-color: white;

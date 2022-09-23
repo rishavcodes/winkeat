@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 
 function Body() {
   return (
@@ -14,11 +15,9 @@ function Body() {
         </ItemBodyText>
 
         <ItemFooterText>
+          <p><Link to="/vendorlogin">Login </Link> as Vendor</p>
           <p>
-            <a href="#">Login </a> as Vendor
-          </p>
-          <p>
-            Let's enhance your business <a href="#">Contact Us</a>
+            Let's enhance your business <a href="/">Contact Us</a>
           </p>
         </ItemFooterText>
       </ItemText>
