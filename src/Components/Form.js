@@ -109,11 +109,13 @@ const SLabel = styled.label`
   margin-left: 4px;
   margin-bottom: 3px;
 `;
-const SInput = styled.input`
+const SInput = styled.input.attrs({
+
+})`
   outline: none;
   border: 1px solid;
-  width: 280px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   background-color: #EEEEEE;
   border-color: grey;
   padding: 7px;

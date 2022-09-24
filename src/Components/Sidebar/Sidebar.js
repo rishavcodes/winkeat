@@ -1,11 +1,10 @@
-import React from 'react';
-import './Sidebar.css';
-import { useState } from 'react'
+import React, {useState} from 'react'
+import "./Sidebar.css"
+import { Link } from "react-router-dom";
 
+function Sidebar() {
 
-export default function Sidebar() {
-
-    const [state2, setstate2] = useState("bx bx-menu")
+  const [state2, setstate2] = useState("bx bx-menu")
     
     const [state, setstate] = useState("sidebar")
     var closeBtn=()=>{
@@ -15,11 +14,13 @@ export default function Sidebar() {
         }
         else{
             setstate("sidebar")
-            setstate2("bx nbx-menu-alt-right");
+            setstate2("bx bx-menu");
         }
     }
-    return (
-        <>
+
+  
+  return (
+    <>
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'/>
         <div className={state}>
         <div className="logo-details">
@@ -29,40 +30,34 @@ export default function Sidebar() {
         <ul className="nav-list">
           
           <li>
-           <a href="/">
-             <i className='bx bx-user' ></i>
+           <Link to="/canteenhome">
+             <i className='bx bx-home' ></i>
+             <span className="links_name">Home</span>
+           </Link>
+           <span className="tooltip">Home</span>
+         </li>
+          <li>
+           <Link to="/user">
+             <i className='bx bx-user'></i>
              <span className="links_name">User</span>
-           </a>
+           </Link>
            <span className="tooltip">User</span>
          </li>
          <li>
-           <a href="/">
+           <Link to="/orders">
              <i className='bx bx-cart-alt' ></i>
              <span className="links_name">Order</span>
-           </a>
+           </Link>
            <span className="tooltip">Order</span>
          </li>
-         
-         <li>
-           <a href="/">
-             <i className='bx bx-cog' ></i>
-             <span className="links_name">Setting</span>
-           </a>
-           <span className="tooltip">Setting</span>
-         </li>
          <li className="profile">
-             <div className="profile-details">
-               {/* <!--<img src="profile.jpg" alt="profileImg">--> */}
-               <div className="name_job">
-                 <div className="name">Gabriel Toledo</div>
-                 <div className="job">Frontend Developer</div>
-               </div>
-             </div>
              <i className='bx bx-log-out' id="log_out" ></i>
          </li>
         </ul>
       </div>
       
     </>
-    )
+  )
 }
+
+export default Sidebar
