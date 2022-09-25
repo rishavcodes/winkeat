@@ -46,9 +46,9 @@ function Sidebar() {
          <li>
            <Link to="/orders">
              <i className='bx bx-cart-alt' ></i>
-             <span className="links_name">Order</span>
+             <span className="links_name">Your Orders</span>
            </Link>
-           <span className="tooltip">Order</span>
+           <span className="tooltip">Your Orders</span>
          </li>
          <li className="profile">
              <i className='bx bx-log-out' id="log_out" ></i>
