@@ -26,12 +26,12 @@ function Searchbar({placeholder}) {
 export default Searchbar
 
 const SearchBox = styled.div`
-    margin-left: 550px;
+    margin-left: 350px;
     margin-top: 25px;
 `
 const SearchInput = styled.input`
     height: 45px;
-    width: 400px;
+    width: 600px;
     padding:20px;
     border: 0.3px solid;
     border-color: grey;

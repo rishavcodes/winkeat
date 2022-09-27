@@ -61,10 +61,13 @@ const OptionList = styled.div`
   cursor: pointer;
   ul li {
     list-style: none;
-    text-decoration: inherit;
-    color: inherit;
     padding: 6px 0;
     font-size: 25px;
     font-weight: 600;
   }
+  ul li a {
+    text-decoration: none;
+    color: black;
+  }
 `
+

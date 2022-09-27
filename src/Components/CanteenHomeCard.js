@@ -12,16 +12,11 @@ function CanteenHomeCard() {
             <img src="/images/canteen-a.png" alt="" />
             <h2>A Block Canteen</h2>
         </Cards>
-        
-        
-        
-        
-        
+
         <Cards>
             <img src="/images/canteen-b.png" alt="" />
             <h2>Main Canteen</h2>
         </Cards>
-        
         
         <Cards>
             <img src="/images/canteen-c.png" alt="" />
@@ -37,7 +32,7 @@ function CanteenHomeCard() {
 export default CanteenHomeCard
 
 const HomeCard = styled.div`
-    padding-left: 350px;
+    padding-left: 250px;
     padding-top: 100px;
     display: flex;
 `
@@ -47,7 +42,7 @@ const Cards = styled.div`
     border: .5px solid;
     width: 300px;
     height: 400px;
-    margin: 10px;
+    margin: 30px;
     background: #D8D8D8;
     border-radius: 20px;
     text-align: center;
