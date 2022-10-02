@@ -17,7 +17,7 @@ function Body() {
         <ItemFooterText>
           <p><Link to="/vendorlogin">Login </Link> as Vendor</p>
           <p>
-            Let's enhance your business <a href="/">Contact Us</a>
+            Let's enhance your business <a href="/contact">Contact Us</a>
           </p>
         </ItemFooterText>
       </ItemText>
