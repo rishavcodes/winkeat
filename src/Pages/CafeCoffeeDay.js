@@ -1,9 +1,9 @@
 import React from 'react'
 
-function CcD() {
+function CafeCoffeeDay() {
   return (
     <div>CcD</div>
   )
 }
 
-export default CcD
+export default CafeCoffeeDay

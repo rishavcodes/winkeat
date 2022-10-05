@@ -9,11 +9,9 @@ import Orders from "../src/Pages/Orders";
 import User from "../src/Pages/User";
 import SavedCards from './Pages/SavedCards';
 import ContactUs from './Pages/ContactUs';
-
-
-
-
-
+import CanteenA from './Pages/CanteenA';
+import CanteenB from './Pages/CanteenB';
+import CafeCoffeeDay from './Pages/CafeCoffeeDay';
 
 
 function App() {
@@ -30,6 +28,9 @@ function App() {
         <Route path="/orders" element={<Orders />} />
         <Route path="/cards" element={<SavedCards />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/canteena" element={<CanteenA />} />
+        <Route path="/canteenb" element={<CanteenB />} />
+        <Route path="/ccd" element={<CafeCoffeeDay />} />
       </Routes>
     </Router>
 

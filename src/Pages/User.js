@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from '../Components/Sidebar/Sidebar'
 import styled from "styled-components";
+import { Fade } from 'react-reveal';
 
 function User() {
   return (
@@ -9,6 +10,7 @@ function User() {
     <Sidebar /> 
 
     <UserBody>
+    <Fade left>
       <UserTop>
         <img src="/images/user-img.jpg" alt="not available" />
         <UserinfoText>
@@ -25,6 +27,7 @@ function User() {
           <li>Log Out</li>
         </ul>
       </OptionList>
+      </Fade>
     </UserBody>
 
     </Container>
