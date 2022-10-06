@@ -12,6 +12,7 @@ import ContactUs from './Pages/ContactUs';
 import CanteenA from './Pages/CanteenA';
 import CanteenB from './Pages/CanteenB';
 import CafeCoffeeDay from './Pages/CafeCoffeeDay';
+import ChangePassword from './Pages/ChangePassword';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/canteena" element={<CanteenA />} />
         <Route path="/canteenb" element={<CanteenB />} />
         <Route path="/ccd" element={<CafeCoffeeDay />} />
+        <Route path="/changepassword" element={<ChangePassword />} />
       </Routes>
     </Router>
 

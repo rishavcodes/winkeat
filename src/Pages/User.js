@@ -23,7 +23,7 @@ function User() {
         <ul>
           <li><a href="/orders">Your Orders</a></li>
           <li>Saved Cards</li>
-          <li>Change Password</li>
+          <li><a href="/changepassword">Change Password</a></li>
           <li>Log Out</li>
         </ul>
       </OptionList>
