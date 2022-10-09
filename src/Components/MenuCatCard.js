@@ -8,17 +8,18 @@ import PizzaMenu from "./PizzaMenu";
 import PizzaData from '../PizzaData';
 
 
-function PizzaBoxShow (PizzaDataShow){
-  return (
-    <PizzaMenu 
-      key={PizzaDataShow.key}
-      img={PizzaDataShow.img}
-      title={PizzaDataShow.title}
-      price={PizzaDataShow.price}
-      description={PizzaDataShow.description}
-    />
-  )
-}
+
+// function PizzaBoxShow (PizzaDataShow){
+//   return (
+//     <PizzaMenu 
+//       key={PizzaDataShow.id}
+//       img={PizzaDataShow.img}
+//       title={PizzaDataShow.title}
+//       price={PizzaDataShow.price}
+//       description={PizzaDataShow.description}
+//     />
+//   )
+// }
 
 function MenuCatCard() {
   return (
@@ -36,7 +37,19 @@ function MenuCatCard() {
       <MenuContent>
         <h2>Pizza</h2>
       <MenuStart>
-        {PizzaData.map(PizzaBoxShow)}
+        {PizzaData.map((item, index) => {
+          return(
+            <PizzaMenu 
+              key={item.id}
+              img={item.img}
+              title={item.title}
+              price={item.price}
+              description={item.description}
+              item={item}
+            />
+          )
+        })}
+        {/* {PizzaData.map(PizzaBoxShow)} */}
       </MenuStart>
       </MenuContent>
     </Body>

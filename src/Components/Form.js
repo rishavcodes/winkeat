@@ -7,7 +7,7 @@ const prepareForm = (formArr) => {
   return formArr.reduce((r, v) => ({ ...r, [v.name]: "" }), {});
 };
 
-const Form = ({ title, formArr, submitBtn, onSubmit, redirect }) => {
+const Form = ({ title , formArr, submitBtn, onSubmit, redirect }) => {
   const initialForm = prepareForm(formArr);
 
   const [form, setForm] = useState(initialForm);
@@ -28,10 +28,10 @@ const Form = ({ title, formArr, submitBtn, onSubmit, redirect }) => {
         </BackIcon>
         <SFormTitle>{title}</SFormTitle>
       </FormHeader>
-      {formArr.map(({ label, name, type }, index) => (
+      {formArr.map(({ label, name, type, placeholder }, index) => (
         <SFormControl key={index}>
           <SLabel htmlFor={name}>{label}</SLabel>
-          <SInput
+          <input
             id={name}
             name={name}
             type={type}
@@ -101,6 +101,17 @@ const SFormTitle = styled.span`
 const SFormControl = styled.div`
   margin-left: 30px;
   margin-top: 10px;
+  input{
+    outline: none;
+    border: 1px solid;
+    width: 300px;
+    height: 40px;
+    background-color: #EEEEEE;
+    border-color: grey;
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
 `;
 const SLabel = styled.label`
   display: block;
@@ -109,19 +120,11 @@ const SLabel = styled.label`
   margin-left: 4px;
   margin-bottom: 3px;
 `;
-const SInput = styled.input.attrs({
+// const SInput = styled.input.attrs({
 
-})`
-  outline: none;
-  border: 1px solid;
-  width: 300px;
-  height: 40px;
-  background-color: #EEEEEE;
-  border-color: grey;
-  padding: 7px;
-  font-size: 14px;
-  border-radius: 5px;
-`;
+// })`
+  
+// `;
 const SButton = styled.button`
   width: 300px;
   height: 40px;

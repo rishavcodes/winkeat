@@ -13,6 +13,7 @@ import CanteenA from './Pages/CanteenA';
 import CanteenB from './Pages/CanteenB';
 import CafeCoffeeDay from './Pages/CafeCoffeeDay';
 import ChangePassword from './Pages/ChangePassword';
+// import { CartProvider } from 'react-use-cart';
 
 
 function App() {

@@ -29,7 +29,7 @@ const Container = styled.div``
 
 const MainContent = styled.div`
     margin-top: 40px;
-    margin-left: 300px;
+    margin-left: 500px;
     h2 {
         font-size: 30px;
     }
@@ -44,15 +44,16 @@ const InputBox = styled.div`
         color: white;
         font-size: 15px;
         border-style: none;
+        cursor: pointer;
     }
     input {  
-    width: 400px;
-    height: 40px;
-    margin: 20px 0;
-    border-radius: 10px;
-    border: 0.5px solid;
-    padding: 10px;
-    font-size: 15px;
+        width: 400px;
+        height: 40px;
+        margin: 20px 0;
+        border-radius: 10px;
+        border: 0.5px solid;
+        padding: 10px;
+        font-size: 15px;
     }
 
 `

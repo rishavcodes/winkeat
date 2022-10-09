@@ -8,10 +8,10 @@ function Header() {
         <Buttons>
           <ButtonGroup>
           <Link to="/login">
-            <LeftButton>Sign in</LeftButton>
+            <LeftButton><h2>Sign in</h2></LeftButton>
           </Link>
           <Link to="/register">
-            <RightButton>Sign Up</RightButton>
+            <RightButton><h2>Sign up</h2></RightButton>
           </Link>
           </ButtonGroup>
         </Buttons>
@@ -44,6 +44,9 @@ const LeftButton = styled.div`
   font-size: 17px;
   cursor: pointer;
   margin: 8px;
+  h2{
+    font-size: 20px;
+  }
 `;
 const RightButton = styled.div`
   background-color: #00ff84;
@@ -59,4 +62,8 @@ const RightButton = styled.div`
   font-size: 17px;
   cursor: pointer;
   margin: 8px;
+  h2{
+    font-size: 20px;
+    
+  }
 `;

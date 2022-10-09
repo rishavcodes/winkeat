@@ -159,7 +159,7 @@
 	 transition: all 0.5s ease;
 }
  .sidebar.open {
-	 width: 300px;
+	 width: 250px;
 }
  .sidebar.open .logo-details .icon {
 	 opacity: 1;

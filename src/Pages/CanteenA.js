@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import MenuCatCard from "../Components/MenuCatCard";
 import { Fade } from "@mui/material";
+import Cart from "./Cart";
 
 function CanteenA() {
   return (
@@ -13,6 +14,7 @@ function CanteenA() {
         <MenuCatCard />
       </Fade>
       </CanteenABody>
+        <Cart />
     </Container>
   );
 }

@@ -7,11 +7,14 @@ import SearchIcon from '@mui/icons-material/Search';
 function Searchbar({placeholder}) {
   return (
     <SearchBox>
+        <span>
         <SearchInput  
           placeholder={placeholder}
           icon={SearchBarIcon}
         />
-        {/* <SearchBarIcon /> */}
+        <SearchBarIcon />
+
+        </span>
 
       
         

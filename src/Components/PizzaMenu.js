@@ -1,8 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useCart } from "react-use-cart";
+// import AddToCartBtn from './AddToCartBtn';
 
 
-function PizzaMenu(props) {
+const PizzaMenu = (props) => {
+    const {addItem} = useCart();
   return (
     <PizzaBox>
         
@@ -12,9 +15,9 @@ function PizzaMenu(props) {
         </FoodImg>
         <FoodInfo>
             <h3>{props.title}</h3>
-            <h4>{props.price}</h4>
+            <h4>₹ {props.price}</h4>
             <p>{props.description}</p>
-            <button>Add to Cart</button>
+            <button onClick={() => addItem(props.item)}>Add to cart</button>
         </FoodInfo>
     </FoodBox>
     </PizzaBox>
@@ -75,5 +78,7 @@ const FoodInfo = styled.div`
         border-radius: 20px;
         border: none;
         font-size: 15px;
+        cursor: pointer;
+        
     }
 `
